@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+
+<head>
+
+    <title>#Sunnyside_Agency_Landing_Page</title>
+    <!--- CODE SANDBOX LINK ------------https://eeur4.csb.app/------------>
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap');
+        @import url('https://css.gg/instagram.css');
+        @import url('https://css.gg/facebook.css');
+        @import url('https://css.gg/twitter.css');
+        @import url('https://css.gg/pinterest.css');
+
+        * {
+            margin: 0;
+            padding: 0;
+            border-style: border-box;
+            width: 100vw;
+            text-align: center;
+
+        }
+
+        .main {
+            display: flex;
+            background-size: cover;
+            font-family: 'Barlow', sans-serif;
+        }
+
+        .bottomImg {
+            width: 25%;
+            height: 31vw;
+        }
+
+        .content {
+            height: 41.66vw;
+            width: 50vw;
+            background-size: cover;
+        }
+
+        #subcontainer {
+            width: 100%;
+            height: 55.5vw;
+            background-image: url("https://myat-htar.github.io/sunnyside-agency-landing-page/images/desktop/image-header.jpg");
+            background-size: cover;
+            color: #fcffff;
+            font-size: 2vw;
+        }
+
+        #section2 {
+            background: #fffbf8;
+        }
+
+        #footNav {
+            height: 25vw;
+            background: #a3ddcf;
+            font-family: 'Barlow', sans-serif;
+        }
+
+        #ct {
+            background: #fffbf8;
+            width: 100%;
+            height: 55.5vw;
+        }
+
+
+        #innerbox {
+            margin: 10vw;
+        }
+
+
+        #transform {
+            background-image: url("https://myat-htar.github.io/sunnyside-agency-landing-page/images/desktop/image-transform.jpg");
+        }
+
+        #standout {
+            background-image: url("https://myat-htar.github.io/sunnyside-agency-landing-page/images/desktop/image-stand-out.jpg");
+        }
+
+        #standoutContent {
+            background: #fffbf8;
+        }
+
+        #graphicdesign {
+            background-image: url("https://myat-htar.github.io/sunnyside-agency-landing-page/images/desktop/image-graphic-design.jpg");
+        }
+
+        #photography {
+            background-image: url("https://myat-htar.github.io/sunnyside-agency-landing-page/images/desktop/image-photography.jpg");
+        }
+
+        #milkbottle {
+            background-image: url("https://myat-htar.github.io/sunnyside-agency-landing-page/images/mobile/image-gallery-milkbottles.jpg");
+        }
+
+        #orange {
+            background-image: url("https://myat-htar.github.io/sunnyside-agency-landing-page/images/desktop/image-gallery-orange.jpg");
+        }
+
+        #cone {
+            background-image: url("https://myat-htar.github.io/sunnyside-agency-landing-page/images/desktop/image-gallery-cone.jpg");
+        }
+
+        #sugar {
+            background-image: url("https://myat-htar.github.io/sunnyside-agency-landing-page/images/desktop/image-gallery-sugar-cubes.jpg");
+        }
+
+        #content {
+            width: 94%;
+            height: 94%;
+            padding: 3vw;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        #sunnysideLogo {
+            width: 50vw;
+            height: 4vh;
+            text-align: left;
+            background-image: url("https://myat-htar.github.io/sunnyside-agency-landing-page/images/logo.svg");
+            background-repeat: no-repeat;
+        }
+
+        #background {
+            font-family: "Fraunces", serif;
+            letter-spacing: 0.4em;
+            font-weight: 1000;
+            height: 70%;
+            width: 100%;
+        }
+
+        #navBar {
+            font-family: "Barlow", sans-serif;
+            font-weight: 600;
+            font-size: 18px;
+            height: 4vw;
+            width: 35vw;
+            display: flex;
+            align-items: center;
+            align-content: baseline;
+        }
+
+        #About:hover {
+            color: black;
+        }
+
+        #Services:hover {
+            color: black;
+        }
+
+        #Projects:hover {
+            color: black;
+        }
+
+        #CONTACTS {
+            color: #000000;
+            border-radius: 2vw;
+            background-color: #ffffff;
+            font-family: 'Fraunces', serif;
+            padding: 1vw;
+            align-items: center;
+        }
+
+        #CONTACTS:hover {
+            color: #ffffff;
+            background-color: rgb(110, 230, 230);
+        }
+
+        #background>img {
+            width: 2.4%;
+            height: 21%;
+            font-size: 0.5em;
+        }
+
+        .transformHead {
+            padding-top: 20%;
+            padding-left: 20%;
+            padding-right: 15%;
+            padding-bottom: 20%;
+            width: 65%;
+            height: 60%;
+            word-wrap: break-word;
+        }
+
+        .section1 {
+            text-align: left;
+            width: 100%;
+            font-family: "Fraunces", serif;
+            font-weight: 700;
+            font-size: 1.1vw;
+        }
+
+        #transformDes {
+            line-height: 160%;
+            font-family: "Barlow", sans-serif;
+            font-weight: 600;
+            color: #908e96;
+        }
+
+        #transformHead1 {
+            line-height: 160%;
+            font-family: "Barlow", sans-serif;
+            font-weight: 600;
+            color: #908e96;
+        }
+
+        .section1>h1 {
+            width: 100%;
+            text-align: left;
+            font-family: "Fraunces", serif;
+            font-weight: 900;
+            letter-spacing: 0em;
+            font-size: 2.6em;
+        }
+
+        .thirdSec {
+            padding-top: 53%;
+            padding-left: 20%;
+            padding-right: 25%;
+            width: 55%;
+            height: 47%;
+        }
+
+        .des {
+            text-align: center;
+            width: 100%;
+            font-family: "Fraunces", serif;
+            font-weight: 700;
+            font-size: 1.1vw;
+        }
+
+        #gdDes {
+            line-height: 160%;
+            font-family: "Barlow", sans-serif;
+            font-weight: 600;
+            color: hsl(167, 40%, 24%)
+        }
+
+        #photodes {
+            line-height: 160%;
+            font-family: "Barlow", sans-serif;
+            font-weight: 600;
+            color: hsl(198, 62%, 26%);
+        }
+
+        .des>h1 {
+            width: 100%;
+            text-align: center;
+            font-family: "Fraunces", serif;
+            font-weight: 900;
+            letter-spacing: 0em;
+            font-size: 1.5em;
+        }
+
+        .bottomImg>img {
+            width: 100%;
+        }
+
+        .br {
+            display: block;
+            margin-bottom: 2vw;
+        }
+
+        .icon>img {
+            width: 2vw;
+            font-size: 0.5em;
+        }
+
+        .testimonial {
+            display: block;
+            margin-bottom: 5vw;
+        }
+
+        #innerct {
+            padding-top: 10%;
+            padding-left: 10%;
+            padding-right: 10%;
+            padding-bottom: 10%;
+            width: 80%;
+            height: 80%;
+            word-wrap: break-word;
+            font-size: 1.2vw;
+        }
+
+        .transformHead1 {
+            text-align: center;
+            width: 100%;
+            font-family: "Fraunces", serif;
+            font-weight: 700;
+            font-size: 1.2vw;
+        }
+
+        .transformHead1>h1 {
+            width: 100%;
+            font-weight: 900;
+            letter-spacing: 0.3em;
+            color: #a7aaab;
+            font-size: 1.5vw;
+        }
+
+        .clientDes {
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .clientImg {
+            width: 33%;
+        }
+
+        .clientImg>img {
+            width: 8vw;
+            border-radius: 50%;
+        }
+
+        .clientCom {
+            width: 32%;
+        }
+
+        .clientComment {
+            width: 100%;
+            font-family: "Barlow", sans-serif;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 160%;
+            color: #908e96;
+        }
+
+        .clientCom>h1 {
+            width: 100%;
+            font-family: "Fraunces", serif;
+            font-size: 12px;
+            font-weight: 900;
+            font-size: 1.5vw;
+        }
+
+        .designation {
+            font-family: "Barlow", sans-serif;
+            font-weight: 600;
+            font-size: 14px;
+            color: #a7aaab;
+            width: 100%;
+        }
+
+        #foot {
+            display: flex;
+            font-family: "Barlow", sans-serif;
+        }
+
+        .footer {
+            padding-top: 5%;
+            padding-left: 35%;
+            padding-right: 35%;
+            width: 30%;
+            font-family: "Barlow", sans-serif;
+            background-color: #7dddca;
+            color: #2c7566;
+            text-align: center;
+        }
+
+
+        #footNavmain {
+            font-size: 3vw;
+            font-family: "Barlow", sans-serif;
+            font-size: 18px;
+        }
+
+        #footerIcon {
+            display: flex;
+            justify-content: center;
+            font-family: "Barlow", sans-serif;
+            font-size: 18px;
+        }
+
+        #socialmedia {
+            display: flex;
+            width: 65%;
+            font-family: "Barlow", sans-serif;
+        }
+
+        .dev {
+            font-size: 12px;
+            font-family: "Barlow", sans-serif;
+            background-color: #7dddca;
+            color: #2c7566;
+            height: 10vh;
+            width: 100vw;
+            padding-bottom: 5px;
+
+        }
+
+
+        /********************************** Responsiveness design **************************************/
+
+        @media screen and (max-width: 480px) {
+            .main {
+                flex-direction: column;
+            }
+
+            .bottomImg {
+                width: 100vw;
+                height: 42vh;
+                overflow: hidden;
+            }
+
+            .content {
+                width: 100vw;
+                height: 62vh;
+            }
+        }
+    </style>
+</head>
+
+
+<!---------------------- Container part design ------------------->
+
+<body>
+    <div class="container">
+        <div id="subcontainer" class="main">
+
+            <div id="content">
+
+                <div id="sunnysideLogo"></div>
+                <!-------------------- Nav bar design ---------------->
+                <div id="navBar">
+                    <div id="About" class="item">About</div>
+                    <div id="Services" class="item">Services</div>
+                    <div id="Projects" class="item">Projects</div>
+                    <div id="CONTACTS" class="item">CONTACT</div>
+                </div>
+                <!-----------------------Background----------------------->
+                <div id="background">
+                    <h1 style="width:97%">WE ARE CREATIVES</h1>
+                    <br />
+                    <br /><br />
+                    <img src="https://myat-htar.github.io/sunnyside-agency-landing-page/images/icon-arrow-down.svg"
+                        alt="down_arrow_img" />
+                </div>
+            </div>
+        </div>
+
+        <!----------------------------- content design---------------------->
+
+        <div id="box2" class="main">
+            <div id="section2" class="content">
+                <div class="transformHead">
+                    <div id="transformBrand" class="section1">
+                        <h1><b>Transform your brand</b></h1>
+                    </div>
+                    <span class="br"></span>
+                    <div id="transformDes" class="section1">We are a full-service creative agency specializing in
+                        helping brands
+                        grow fast. Engage your clients through compelling visuals that do most of the marketing for you.
+                    </div>
+                    <span class="br"></span>
+                    <div id="learnMore" class="section1"><b style="border-bottom: 0.3vw solid hsl(51, 100%, 49%);">LEARN
+                            MORE</b></div>
+                </div>
+            </div>
+            <div id="transform" class="content"></div>
+        </div>
+
+        <!------------------------- standout Content ----------------->
+
+        <div id="standout Content" class="main">
+            <div id="standout" class="content"></div>
+            <div id="standoutContent" class="content">
+                <div class="transformHead">
+                    <div id="standDes" class="section1">
+                        <h1><b>Stand out to right audience</b></h1>
+                    </div>
+                    <span class="br"></span>
+                    <div id="transformHead1" class="section1">Using a collaborative formula for designers, reserachers,
+                        photographers,
+                        videographers, and copywriters. We'll build and extend your brand in digital places.</div>
+                    <span class="br"></span>
+                    <div id="learnMore" class="section1"><b style="border-bottom: 0.3vw solid hsl(7, 99%, 70%);">LEARN
+                            MORE</b></div>
+                </div>
+            </div>
+        </div>
+
+        <!-----------------graphic design section----------->
+        <div id="box4" class="main">
+            <div id="graphicdesign" class="content">
+                <div class="thirdSec">
+                    <div id="gd" class="des">
+                        <h1><strong style="color: hsl(167, 40%, 24%)">Graphic Design</strong></h1>
+                    </div>
+                    <span class="br"></span>
+                    <div id="gdDes" class="des">Great design makes you memorable. We deliver artwork that underscores
+                        your brand message and cepture potentional clients' attention.</div>
+
+                </div>
+            </div>
+
+            <!------photography section------------->
+
+            <div id="photography" class="content">
+                <div class="thirdSec">
+                    <div id="photoDes" class="des">
+                        <h1><strong style="color: hsl(198, 62%, 26%);">Photography</strong></h1>
+                    </div>
+                    <span class="br"></span>
+                    <div id="photodes" class="des">Increase your credibility by getting the most stunning, high-quality
+                        photos that improve your business image.</div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-------------CLIENT TESTIMONIALS------------>
+        <div id="ct" class="main">
+            <div id="innerct">
+                <div class="transformHead1">
+                    <h1>CLIENT TESTIMONIALS</strong>
+                </div>
+                <span class="testimonial"></span>
+                <div class="clientDes">
+                    <div class="clientImg"><img
+                            src="https://myat-htar.github.io/sunnyside-agency-landing-page/images/image-emily.jpg"
+                            alt="emily img" /></div>
+                    <div class="clientImg"><img
+                            src="https://myat-htar.github.io/sunnyside-agency-landing-page/images/image-thomas.jpg"
+                            alt="thomas img" /></div>
+                    <div class="clientImg"><img
+                            src="https://myat-htar.github.io/sunnyside-agency-landing-page/images/image-jennie.jpg"
+                            alt="jennie img" /></div>
+
+                </div>
+                <div class="clientDes">
+                    <div class="clientCom">
+                        <span class="br"></span>
+                        <div class="clientComment">We put our trust in Sunnyside and they delivered, making sure our
+                            needs were
+                            meet and deadlines were always hit.</div>
+                        <span class="br"></span>
+                        <h1>Emily R.</h1>
+                        <span class="br"></span>
+                        <div class="designation">Marketing Director</div>
+                    </div>
+                    <div class="clientCom">
+                        <span class="br"></span>
+                        <div class="clientComment">Sunnyside enthusiasm coupled with their keen intrest in our brand's
+                            success
+                            made it a satisfyling and enjoybale experience. </div>
+                        <span class="br"></span>
+                        <h1>Thomas S.</h1>
+                        <span class="br"></span>
+                        <div class="designation">Chief Operating Officer</div>
+                    </div>
+                    <div class="clientCom"><span class="br"></span>
+                        <div class="clientComment">Incredible end result! Our sales increased over 400% when we worked
+                            with
+                            Sunnyside. Highly recommended!</div>
+                        <span class="br"></span>
+                        <h1>Jannie F.</h1>
+                        <span class="br"></span>
+                        <div class="designation">Business Owner</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div id="bottomImg" class="main">
+            <div id="milkbottle" class="bottomImg"><img
+                    src="https://myat-htar.github.io/sunnyside-agency-landing-page/images/desktop/image-gallery-milkbottles.jpg"
+                    alt="milkbottles" /></div>
+            <div id="orange" class="bottomImg"><img
+                    src="https://myat-htar.github.io/sunnyside-agency-landing-page/images/desktop/image-gallery-orange.jpg"
+                    alt="orange" /></div>
+            <div id="cone" class="bottomImg"><img
+                    src="https://myat-htar.github.io/sunnyside-agency-landing-page/images/desktop/image-gallery-cone.jpg"
+                    alt="cone" /></div>
+            <div id="sugar" class="bottomImg"><img
+                    src="https://myat-htar.github.io/sunnyside-agency-landing-page/images/desktop/image-gallery-sugarcubes.jpg"
+                    alt="sugarcubes" /></div>
+        </div>
+        <div id="footNav" class="main">
+            <div class="footer">
+                <div id="footNavmain" class="des"><strong>sunnyside</strong></div>
+                <span class="br"></span>
+                <div id="foot" class="des">
+                    <div class="footerNav">About</div>
+                    <div class="footerNav">Services</div>
+                    <div class="footerNav">Projects</div>
+
+                </div>
+                <span class="testimonial"></span>
+
+                <!--------------footer icon ------------->
+                <div id="footerIcon" class="des">
+                    <div id="socialmedia" class="des">
+                        <div class="icon">
+                            <i class="gg-facebook"></i>
+                        </div>
+                        <div class="icon">
+                            <i class="gg-instagram"></i>
+                        </div>
+                        <div class="icon">
+                            <i class="gg-twitter"></i>
+                        </div>
+                        <div class="icon">
+                            <i class="gg-pinterest"></i>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div class="dev">Challenge by <u>Frontend Mentor</u>. Coded by <u>Myat Htar</u>.</div>
+</body>
+
+</html>
