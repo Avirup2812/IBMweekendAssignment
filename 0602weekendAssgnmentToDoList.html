@@ -1,0 +1,628 @@
+<html>
+
+<head>
+<!-----------------https://7eqq4.csb.app/--------------->
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Fraunces', serif;
+
+        }
+
+        body {
+            background-color: aquamarine;
+        }
+
+        #container {
+
+            height: 50%;
+            width: 60%;
+            margin-left: 20%;
+            margin-top: 5%;
+            border-radius: 10px;
+        }
+
+
+        .head {
+            height: 20%;
+            width: 100%;
+            color: white;
+            background-color: #2F313A;
+            opacity: .5;
+            justify-content: center;
+            text-align: center;
+            border-radius: 10px;
+            letter-spacing: 2rem;
+            font-family: 'Roboto', sans-serif;
+            font-size: 3rem;
+
+        }
+
+        .head:hover {
+            background-color: black;
+            color: #01ffbb;
+        }
+
+        .header {
+            background-image: url("https://github.com/Avirup2812/AvirupSaha/blob/main/photo-1481151500463-1fa2dd2d5dbe.jfif?raw=true");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            padding: 30px 40px;
+            font-size: 30px;
+            color: #00f9b6;
+            text-align: center;
+
+        }
+
+        .header:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+
+        .timeDate {
+            padding: 30px;
+        }
+
+        #currTime {
+
+            width: inherit;
+            padding-top: 30px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 200;
+            font-size: 65px;
+            line-height: 76px;
+            text-align: center;
+            color: #00f9b6;
+        }
+
+        #currDate {
+
+            width: inherit;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 30px;
+            line-height: 30px;
+            text-align: center;
+            color: #00f9b6;
+
+        }
+
+        #unsrtedList {
+
+            height: 50%;
+            width: 60%;
+            margin-left: 20%;
+
+        }
+
+        .itemLists {
+            width: 60%;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            font-size: 25px;
+        }
+
+        ul li {
+            cursor: pointer;
+            position: relative;
+            padding: 12px 8px 12px 40px;
+            background-image: url("https://github.com/Avirup2812/AvirupSaha/blob/main/istockphoto-675715346-612x612.jpg?raw=true");
+            opacity: 0.75;
+            color: #00ffbb;
+            border-radius: 10px;
+
+        }
+
+        ul li:nth-child(odd) {
+            background-image: url("https://github.com/Avirup2812/AvirupSaha/blob/main/istockphoto-675715346-612x612.jpg?raw=true");
+            border-radius: 10px;
+            opacity: 0.5;
+            color: #00ffbb;
+        }
+
+        ul li:hover {
+            background-image: url("https://github.com/Avirup2812/AvirupSaha/blob/main/istockphoto-675715346-612x612.jpg?raw=true");
+            opacity: .25;
+            color: white;
+        }
+
+        ul li.checked {
+            opacity: 0.8;
+            color: #00ffbb;
+            text-decoration: line-through;
+        }
+
+        ul li.checked::before {
+            content: '';
+            position: absolute;
+            border-color: #fff;
+            border-style: solid;
+            border-width: 0 2px 2px 0;
+            top: 10px;
+            left: 16px;
+            transform: rotate(45deg);
+            height: 15px;
+            width: 7px;
+        }
+
+        .remove {
+            position: absolute;
+            right: 0;
+            top: 0;
+            padding: 12px 16px 12px 16px;
+            background-color: black;
+            color: #1ce4ae;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+
+        }
+
+        .remove:hover {
+            color: black;
+            background-color: #1ce4ae;
+        }
+
+        input {
+            margin: 0;
+            border: none;
+            background: #d9d9d9;
+            color: #2F313A;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            width: 75%;
+            padding: 15px;
+            float: left;
+            font-size: 25px;
+        }
+
+        .addBtn {
+            padding: 15px;
+            width: 25%;
+            background: #00f9b6;
+            color: #2b2c30;
+            float: left;
+            text-align: center;
+            font-size: 25px;
+            cursor: pointer;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+        .addBtn:hover {
+            background-color: #1fa782;
+            color: white;
+
+        }
+
+        .addBtn1 {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            display: none;
+            font-size: 1.5rem;
+            text-align: end;
+            color: white;
+        }
+
+        .addBtn:hover+.addBtn1 {
+            display: block;
+
+        }
+
+
+        /******************* Responsive part ****************************/
+
+        @media (min-width: 175px)and (max-width: 326px) {
+
+            #container {
+                height: 40%;
+                width: 90%;
+                margin-left: 5%;
+                margin-top: 5%;
+                border-radius: 10px;
+            }
+
+
+            #unsrtedList {
+                width: 90%;
+                margin-left: 5%;
+                height: auto;
+            }
+
+            ul {
+                font-size: 12px;
+            }
+
+            .head {
+                height: 7%;
+                width: 100%;
+                color: white;
+                background-color: #2F313A;
+                opacity: .5;
+                justify-content: center;
+                text-align: center;
+                border-radius: 5px;
+                letter-spacing: .2rem;
+                font-family: 'Roboto', sans-serif;
+                font-size: .6rem;
+            }
+
+            #currTime {
+                width: inherit;
+                padding-top: 20px;
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: 200;
+                font-size: 30px;
+                line-height: 60px;
+                text-align: center;
+                color: #00f9b6;
+            }
+
+            #currDate {
+                font-size: 15px;
+
+            }
+
+            input {
+                margin: 0;
+                border: none;
+                background: #d9d9d9;
+                color: #2F313A;
+                border-top-left-radius: 10px;
+                border-bottom-left-radius: 10px;
+                width: 80%;
+                padding: 10px;
+                float: left;
+                font-size: 10px;
+            }
+
+            .addBtn {
+                padding: 10px;
+                width: 20%;
+                background: #00f9b6;
+                color: #2b2c30;
+                float: left;
+                text-align: center;
+                font-size: 10px;
+                cursor: pointer;
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
+            }
+
+            .addBtn1 {
+                font-size: 1rem;
+            }
+            .addBtn:hover {
+            background-color: #1fa782;
+            color: white;
+
+        }
+
+        }
+
+
+        @media (min-width: 326px) and (max-width: 480px) {
+
+            #container {
+
+                height: 50%;
+                width: 80%;
+                margin-left: 10%;
+                margin-top: 5%;
+                border-radius: 10px;
+            }
+
+            #unsrtedList {
+                width: 80%;
+                height: 30%;
+                margin-left: 10%;
+            }
+
+            .head {
+                height: 15%;
+                width: 100%;
+                color: white;
+                background-color: #2F313A;
+                opacity: .5;
+                justify-content: center;
+                text-align: center;
+                border-radius: 10px;
+                letter-spacing: .6rem;
+                font-family: 'Roboto', sans-serif;
+                font-size: 1rem;
+            }
+
+            input {
+                margin: 0;
+                border: none;
+                background: #d9d9d9;
+                color: #2F313A;
+                border-top-left-radius: 10px;
+                border-bottom-left-radius: 10px;
+                width: 80%;
+                padding: 10px;
+                float: left;
+                font-size: 10px;
+            }
+
+            .addBtn {
+                padding: 10px;
+                width: 20%;
+                background: #00f9b6;
+                color: #2b2c30;
+                float: left;
+                text-align: center;
+                font-size: 10px;
+                cursor: pointer;
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
+            }
+            .addBtn:hover {
+            background-color: #1fa782;
+            color: white;
+
+        }
+            #currTime {
+
+                width: inherit;
+                padding-top: 30px;
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: 200;
+                font-size: 65px;
+                line-height: 76px;
+                text-align: center;
+                color: #00f9b6;
+            }
+
+            #currDate {
+
+                width: inherit;
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 30px;
+                line-height: 30px;
+                text-align: center;
+                color: #00f9b6;
+
+            }
+
+        }
+
+        @media (min-width: 481px) and (max-width: 800px) {
+
+            #container {
+                height: 65%;
+                width: 80%;
+                margin-left: 10%;
+                margin-top: 5%;
+                border-radius: 10px;
+            }
+
+            #unsrtedList {
+                height: 60%;
+                width: 80%;
+                margin-left: 10%;
+            }
+
+            .head {
+                font-size: 1.2rem;
+                letter-spacing: .4rem;
+            }
+
+            input {
+                font-size: 13px;
+            }
+
+            .addBtn {
+                font-size: 13px;
+            }
+            .addBtn:hover {
+            background-color: #1fa782;
+            color: white;
+
+        }
+            #currTime {
+
+                width: inherit;
+                padding-top: 30px;
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: 200;
+                font-size: 65px;
+                line-height: 76px;
+                text-align: center;
+                color: #00f9b6;
+            }
+
+            #currDate {
+
+                width: inherit;
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 30px;
+                line-height: 30px;
+                text-align: center;
+                color: #00f9b6;
+
+            }
+
+            .addBtn1 {
+                font-size: .5rem;
+            }
+
+           
+        }
+
+        @media (min-width: 800px) and (max-width: 1024px) {
+
+
+            #container {
+                height: 50%;
+                width: 90%;
+                margin-left: 5%;
+                margin-top: 5%;
+                border-radius: 10px;
+            }
+
+            .head {
+                height: 15%;
+                width: 100%;
+                color: white;
+                background-color: #2F313A;
+                opacity: .5;
+                justify-content: center;
+                text-align: center;
+                border-radius: 10px;
+                letter-spacing: 1.75rem;
+                font-family: 'Roboto', sans-serif;
+                font-size: 2.75rem;
+
+            }
+
+            #unsrtedList {
+                height: 30%;
+                width: 90%;
+                margin-left: 5%;
+            }
+
+            .addBtn:hover {
+            background-color: #1fa782;
+            color: white;
+
+        }
+
+        }
+
+        @media (min-width: 1024px) and (max-width: 1280px) {
+
+
+
+            #container {
+                height: 60%;
+                width: 90%;
+                margin-left: 5%;
+                margin-top: 5%;
+                border-radius: 10px;
+            }
+
+            #unsrtedList {
+                height: 50%;
+                width: 90%;
+                margin-left: 5%;
+            }
+           
+
+        }
+        
+    </style>
+</head>
+
+
+<body>
+
+    <div id="container" class="header">
+        <div class="head">TO DO LIST</div>
+        <div class="timeDateDayMonth">
+            <div class="timeDate">
+                <p><span id='currTime'></span></p>
+                <p><span id="currDate"></span></p>
+            </div>
+            <input type="text" id="ipItm" placeholder="Enter  your  todo  list">
+            <span onclick="newElement()" class="addBtn"><b>+</b></span>
+            <div class="addBtn1">Click "+" to add events</div>
+
+        </div>
+    </div>
+
+    <ul id="unsrtedList"></ul>
+
+    <script>
+        /**************** adding item to TODO list  *********************/
+        var nl = document.getElementsByTagName("LI");
+        for (var i = 0; i < nl.length; i++) {
+            var span = document.createElement("SPAN");
+            var txt = document.createTextNode("\u00D7");
+            span.className = "remove";
+            span.appendChild(txt);
+            nl[i].appendChild(span);
+        }
+
+        /***************** removing item from TODO list ********************/
+        var remove = document.getElementsByClassName("remove");
+        for (var i = 0; i < remove.length; i++) {
+            remove[i].onclick = function () {
+                var div = this.parentElement;
+                div.style.display = "none";
+            }
+        }
+        /****************** check uncheck item in TODO list *******************/
+        var list = document.querySelector('ul');
+        list.addEventListener('click', function (eventChecked) {
+            if (eventChecked.target.tagName === 'LI') {
+                eventChecked.target.classList.toggle('checked');
+            }
+        }, false);
+
+
+        /****************** input function *******************/
+        function newElement() {
+            var li = document.createElement("li");
+            var inputValue = document.getElementById("ipItm").value;
+            var t = document.createTextNode(inputValue);
+            li.appendChild(t);
+            /**********alert for empty input********/
+            if (inputValue === '') {
+                alert("Hey! Please write an event in the input box and press + for adding it");
+            } else {
+                document.getElementById("unsrtedList").appendChild(li);
+            }
+
+            document.getElementById("ipItm").value = "";
+            /************** remove icon addition ****************/
+            var span = document.createElement("SPAN");
+            var txt = document.createTextNode("\u00D7");
+            span.className = "remove";
+            span.appendChild(txt);
+            li.appendChild(span);
+
+            for (i = 0; i < remove.length; i++) {
+                remove[i].onclick = function () {
+                    var div = this.parentElement;
+                    div.style.display = "none";
+                }
+            }
+        }
+
+        /*******************Time date month day**********************/
+        const today = new Date();
+        const time = today.getHours() + ":" + String(today.getMinutes()).padStart(2, '0');
+        document.getElementById('currTime').innerHTML = time;
+        /************ day month date************/
+        function startDate() {
+            var d = new Date();
+            var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+            var months = ["Jan", "Feb", "Mar", "Apr", "May", "June", "July", "Aug", "Sept", "Oct", "Nov", "Dec"];
+            document.getElementById("currDate").innerHTML = days[d.getDay()] + " , " + months[d.getMonth()] + " " + d.getDate();
+        }
+        startDate();
+
+    </script>
+</body>
+
+</html>
