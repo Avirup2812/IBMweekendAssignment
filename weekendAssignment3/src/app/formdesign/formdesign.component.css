@@ -1,0 +1,308 @@
+ @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#head {
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("https://github.com/Avirup2812/AvirupSaha/blob/main/bg-intro-mobile.png?raw=true");
+  background-color: hsl(0, 100%, 74%);
+  padding: 100px 0;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 30px;
+}
+
+/*Left part design*/
+
+.leftSection {
+  flex: 1;
+  margin-bottom: 50px;
+}
+
+.leftSection h1 {
+  color: white;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  margin-bottom: 2rem;
+}
+
+.leftSection p {
+  color: white;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+}
+
+/*Right part design*/
+
+.rightSection {
+  flex: 1;
+}
+
+/****Trial tab design*****/
+
+.rightSection .trialTab {
+  background-color: hsl(248, 32%, 49%);
+  color: white;
+  padding: 15px 90px;
+  border-radius: 10px;
+  box-shadow: 0 7px hsla(249, 10%, 26%, 0.404);
+  margin-bottom: 30px;
+}
+
+.rightSection .trialTab:hover {
+  color: rgb(240, 240, 240);
+  background-color: hsl(245, 41%, 46%);
+}
+
+.rightSection .trialTab p {
+  font-size: 1.3rem;
+  line-height: 2.2rem;
+}
+
+.rightSection .trialTab p span {
+  font-weight: 700;
+}
+
+/*****Form section*****/
+
+.rightSection .formSection {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 8px hsla(249, 10%, 26%, 0.404);
+}
+
+.details {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.rightSection label {
+  display: none;
+}
+
+/* Form Input design */
+
+.rightSection input {
+  width: 100%;
+  height: 60px;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  border: 1.3px solid hsl(246, 25%, 77%);
+  padding-left: 20px;
+  outline: none;
+  color: hsl(249, 10%, 26%);
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.rightSection input:focus {
+  border: 1.5px solid hsl(249, 10%, 26%);
+}
+
+.rightSection input::placeholder {
+  color: hsla(249, 10%, 26%, 0.678);
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+small {
+  display: flex;
+  justify-content: right;
+  color: hsl(0, 100%, 74%);
+  padding-bottom: 5%;
+}
+
+/*******submit btn design*******/
+
+.rightSection button {
+  width: 100%;
+  height: 60px;
+  cursor: pointer;
+  background-color: hsl(154, 59%, 51%);
+  box-shadow: 0px 4px hsl(154, 56%, 44%);
+  border-radius: 10px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border: none;
+  outline: none;
+}
+
+.rightSection button:hover {
+  background-color: hsl(154, 84%, 52%);
+}
+
+.rightSection button:disabled {
+  background-color: rgb(209, 209, 209);
+  box-shadow: 0px 4px hsl(0, 0%, 61%);
+}
+
+/**** footer ****/
+
+.rightSection .tnC {
+  margin-top: 10px;
+  color: hsl(246, 25%, 77%);
+}
+
+.rightSection .tnC span {
+  color: hsl(0, 100%, 74%);
+  font-weight: 700;
+}
+
+/*******For tablet and big screen mobiles ***************/
+
+@media (min-width: 800px) and (max-width: 1024px) {
+  #head {
+    background-image: url("https://github.com/Avirup2812/AvirupSaha/blob/main/bg-intro-desktop.png?raw=true");
+  }
+
+  .container {
+    flex-direction: row;
+  }
+
+  /**Left section**/
+
+  .leftSection {
+    text-align: left;
+    padding-right: 40px;
+  }
+
+  .leftSection h1 {
+    font-size: 2rem;
+    line-height: 3rem;
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+
+  .leftSection p {
+    font-size: 0.7rem;
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+
+  /**Right section**/
+
+  .rightSection {
+    max-width: 500px;
+  }
+
+  .rightSection .trialTab {
+    padding: 10px;
+    height: 50px;
+  }
+
+  .rightSection .trialTab p {
+    font-size: 0.9rem;
+  }
+
+  .rightSection .formSection {
+    padding: 30px;
+  }
+
+  .rightSection button {
+    width: 100%;
+    height: 40px;
+    font-size: 0.9rem;
+  }
+
+  .rightSection input {
+    font-size: 0.9rem;
+    height: 40px;
+  }
+
+  .rightSection input::placeholder {
+    font-size: 0.9rem;
+    height: 50px;
+  }
+
+  .rightSection .tnC {
+    margin-top: 20px;
+    font-size: 0.5rem;
+  }
+}
+
+/*******For desktop and laptop ***************/
+
+@media (min-width: 1024px) {
+  #head {
+    background-image: url("https://github.com/Avirup2812/AvirupSaha/blob/main/bg-intro-desktop.png?raw=true");
+  }
+  .container {
+    flex-direction: row;
+  }
+
+  /**Left section**/
+
+  .leftSection {
+    text-align: left;
+    padding-right: 50px;
+  }
+  .leftSection h1 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    padding-left: 7.5%;
+    padding-right: 7.5%;
+  }
+
+  .leftSection p {
+    font-size: 1rem;
+    padding-left: 7.5%;
+    padding-right: 7.5%;
+  }
+
+  /**Right section**/
+
+  .rightSection {
+    max-width: 500px;
+  }
+
+  .rightSection .trialTab {
+    padding: 20px;
+  }
+
+  .rightSection .trialTab p {
+    font-size: 1.1rem;
+  }
+
+  .rightSection .formSection {
+    padding: 40px;
+  }
+
+  .rightSection input {
+    font-size: 1.05rem;
+    height: 60px;
+  }
+  .rightSection input::placeholder {
+    font-size: 1.05rem;
+    height: 60px;
+  }
+
+  .rightSection .tnC {
+    margin-top: 20px;
+    font-size: 0.7rem;
+  }
+} 

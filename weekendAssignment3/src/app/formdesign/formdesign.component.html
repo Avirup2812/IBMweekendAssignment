@@ -1,0 +1,50 @@
+<!-- This is using REACTIVE FORM MODULES  -->
+
+<section id="head">
+    <div class="container">
+        <div class="leftSection">
+            <h1>Learn to code by <br> watching others</h1>
+            <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+                but understanding how developers think is invaluable.</p>
+        </div>
+
+        <div class="rightSection">
+            <div class="trialTab">
+                <p><span>Try it free 7 days</span> then $20/mo. thereafter</p>
+            </div>
+
+
+            <div class="formSection">
+                <form action="" [formGroup]="logIn" (ngSubmit)="onSubmit()">
+                    <label for="">firstName</label>
+                    <input type="text" placeholder="First Name" formControlName="fName">
+                    <small *ngIf="!f.valid && f.touched"><i>First Name cannot be empty</i></small>
+
+
+                    <label for="">lastName</label>
+                    <input type="text" placeholder="Last Name" formControlName="lName">
+                    <small *ngIf="!l.valid && l.touched"><i>Last Name cannot be empty</i></small>
+
+
+                    <label for="">email</label>
+                    <input type="email" placeholder="Email Address" formControlName="email" >
+                    <small *ngIf="!mail.valid && mail.touched"><i>Looks like this is not an email</i> </small>
+                    
+
+
+                    <label for="">password</label>
+                    <input type="password"  placeholder="Password" formControlName="password">
+                    <small *ngIf="!pass.valid && pass.touched"><i>Password cannot be empty</i> </small>
+
+
+                    <div class="submitBtn">
+                        <button type="submit" (click)="clickedMe()" [disabled]="!logIn.valid">Claim your free trial </button>
+                    </div>
+                    <p class="tnC">By clicking the button, you are agreeing to our <span>Terms and
+                            Services</span></p>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</section>
