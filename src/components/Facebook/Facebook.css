@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@100;400;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Redressed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gideon+Roman&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  margin-left: 25%;
+  margin-top: 1.6%;
+  display: flex;
+  width: 45vw;
+  border-radius: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  background: rgb(22, 206, 213);
+  background: linear-gradient(
+    129deg,
+    rgba(22, 206, 213, 1) 0%,
+    rgba(0, 91, 255, 1) 100%
+  );
+}
+/* Section One */
+.section-one {
+  display: flex;
+  flex-direction: column;
+  font-family: cursive;
+  width: 200px;
+  justify-content: space-between;
+  padding: 5%;
+  font-family: "Roboto Serif", sans-serif;
+  font-weight: bold;
+}
+.username {
+  display: flex;
+  justify-content: left;
+}
+.fbid {
+  justify-content: left;
+  font-family: "Gideon Roman", cursive;
+  border-radius: 10px;
+  color: rgb(4, 4, 179);
+  display: flex;
+  text-align: right;
+}
+/* Action */
+.action {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20%;
+  justify-content: left;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.content {
+  font-family: "Redressed", cursive;
+  font-size: 18px;
+  background-color: white;
+  word-wrap: break-word;
+  padding-top: 3%;
+  padding-left: 1%;
+  padding-right: 1%;
+  color: rgb(21, 20, 83);
+  margin-top: 2%;
+  margin-bottom: 2%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.badge {
+  border-radius: 100%;
+  background-color: whitesmoke;
+  height: 30px;
+  width: 30px;
+  justify-content: center;
+  text-align: center;
+  color: rgb(9, 9, 158);
+  padding-top: 5%;
+}
+
+.logo{
+    padding-top: 4%;
+    padding-left: .7%;
+    height: 40px;
+    width: 40px;
+}

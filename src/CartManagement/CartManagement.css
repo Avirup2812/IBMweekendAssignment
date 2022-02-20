@@ -1,0 +1,206 @@
+/* Heading */
+
+.cartHead {
+  background-color: #02b7ff;
+  border-radius: 10px;
+  height: 2%;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: white;
+}
+.cartHeadTitle {
+  font-size: 45px;
+  font-weight: bolder;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  background: linear-gradient(#103ed3, #0c2e9e, #082072, #041346);
+  border-radius: 10px;
+  color: white;
+}
+/*Nav buttons */
+.navItem {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: end;
+  margin-top: 1%;
+  padding-right: 2%;
+  padding-bottom: 0.5%;
+  font-size: 25px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+/*Button portion*/
+
+button {
+ border:none;
+ color: white;
+ background-color: #075c7e;
+font-size: 18px;
+width: 100%;
+padding: 7%;
+border-radius: 10px;
+font-weight: bold;
+box-shadow: 5px 5px #097099;
+}
+
+button:hover{
+  color:#075c7e;
+  background-color: white;
+  box-shadow: 5px 5px #a7aaac;
+  
+}
+
+.cartCalcTextAddRemove {
+  padding: 1%;
+}
+
+.cartCalcTextAddRemove button {
+  background-color: #02b7ffc7;
+  height: 2.5%;
+  width: 5%;
+  padding: 1%;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  justify-content: center;
+  text-align: center;
+  margin: 1.5%;
+}
+
+.navCart img {
+  height: 35px;
+  width: 35px;
+}
+.signIn:hover {
+  color: black;
+}
+.home:hover {
+  color: black;
+}
+.contact:hover {
+  color: black;
+}
+.about:hover {
+  color: black;
+}
+/*Cart Calc section*/
+.yourCartPart {
+  background-color: #082072;
+  height: 30%;
+  width: 100%;
+  color: white;
+  justify-content: right;
+  text-align: center;
+}
+.yourCartHeading {
+  font-size: 35px;
+  font-weight: bold;
+  letter-spacing: 0.5rem;
+  margin-top: 5%;
+  padding: 2%;
+}
+
+.cartItems {
+  font-size: 25px;
+  font-family: cursive;
+}
+.emptyCartMsg {
+  font-weight: bold;
+  letter-spacing: 0.3rem;
+  padding: 2%;
+}
+.addItemMsg {
+  color: rgb(168, 168, 168);
+  padding: 1%;
+}
+
+.add {
+  height: 30px;
+  width: 50px;
+  font-size: 15px;
+}
+.remove {
+  height: 30px;
+  width: 50px;
+  font-size: 15px;
+}
+/*Body*/
+
+.CartManagement{
+  background: linear-gradient(#e8f8ffc7, #92e0ffc7, #59d0ffc7, #23c1ffc7,#03a2e0c7);
+}
+.productHead{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: #082072;
+  font-size: 30px;
+  font-weight: bolder;
+  padding: 2%;
+}
+
+/*display part of item*/
+
+.productDisplay {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+}
+.productDescription {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-size: 30px;
+  width: 100%;
+  padding: 2%;
+ 
+}
+.productPic{
+  width: 50%;
+  padding: 2%;
+}
+.productImg {
+  object-fit: contain;
+  height: 30vh;
+  width: 30vw;
+  display: flex;
+  justify-content: right;
+  background-color: white;
+  border-radius: 15px;
+  padding: 2%;
+}
+
+.productName{
+  font-size: 35px;
+  font-weight: bolder;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.productSpec{
+  padding-top: 2%;
+  font-size: 20px;
+  font-weight: lighter;
+
+}
+.productPrice{
+  font-size: 35px;
+  font-weight: bolder;
+}
+.addToCart{
+  font-size: 25px;
+  font-weight: bolder;
+  height: 10%;
+  width: 15%;
+}
+.checkoutBtn{
+  width: 30%;
+  height: 20%;
+  justify-content: center;
+  text-align: center;
+  padding-left: 35%;
+}
